@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './css/createArticles.css';
 
 const CreateArticle = () => {
@@ -49,8 +50,8 @@ const CreateArticle = () => {
     }
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="container-create">
+      <header className="container-header-create">
         <h1>Creer un article</h1>
         <form onSubmit={requestCreateArticle} method='POST'>
             <label>
@@ -73,6 +74,7 @@ const CreateArticle = () => {
         </form>
         {errorMessage && <div style={{ color: 'red' }}>{errorMessage}</div>}
         {successMessage && <div style={{ color: 'green' }}>{successMessage}</div>}
+        <Link className='teste' to="/">Retourner à l'acceuil</Link>
       </header>
     </div>
   );

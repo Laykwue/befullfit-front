@@ -9,8 +9,8 @@ function AppHeader() {
   return (
     <div className='App-header'>
       <h1>Articles</h1>
-      <Link to="/createArticle">Créer mon article</Link>
-      <Link to="/voirArticles">Voir mes articles</Link>
+      <Link className='nav-link' to="/createArticle">Créer mon article</Link>
+      <Link className='nav-link' to="/voirArticles">Voir mes articles</Link>
     </div>
   );
 }

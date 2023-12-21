@@ -1,8 +1,8 @@
-.App {
+.container-create {
   text-align: center;
 }
 
-.App-header {
+.container-header-create{
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -57,4 +57,10 @@ textarea {
   margin-top: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1;
+}
+
+.teste {
+  margin-top: 20px;
+  font-size: 15px;
+  color: white;
 }
