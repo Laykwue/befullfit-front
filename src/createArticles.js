@@ -17,7 +17,7 @@ const CreateArticle = () => {
             setErrorMessage("Veuillez remplir tous les champs.")
         } else {
             try {
-                const response = await fetch('http://localhost:5000/articles/create', {
+                const response = await fetch('https://api.hunygo.com/articles/create', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json',

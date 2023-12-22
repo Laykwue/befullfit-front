@@ -13,7 +13,7 @@ const VoirArticles = () => {
         setLenghtArticles(0)
     }
 
-    
+
     const requestVoirArticle = async (event) => {
         event.preventDefault();
         if (!author_id) {
@@ -21,7 +21,7 @@ const VoirArticles = () => {
             setErrorMessage("Veuillez remplir tous les champs.")
         } else {
             try {
-                const response = await fetch(`http://localhost:5000/articles/view/${author_id}`, {
+                const response = await fetch(`https://api.hunygo.com/articles/view/${author_id}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
